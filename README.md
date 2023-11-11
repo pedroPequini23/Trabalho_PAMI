@@ -6,11 +6,16 @@
 
 
 <br>
+<br>  
+
+
+## Tópicos:
+
+### Actions para uso em Intents Implícitas - Sensores Diponíveis -Principais Permissões 
+
+<br>
 <br>
 
-### Principais Permissões - Actions para uso em Intents Implícitas - Sensores Diponíveis
-
-## Principais Permissões
 
 ## Actions para uso em Intents Implícitas
 
@@ -92,15 +97,104 @@ Um sensor pode exercer muitas funcionalidades e por isso tem grande eficácia. E
 
 2.12 **Categorias de Sensores**   
 
-**Sensores de movimento**   
+2.12.1 **Sensores de movimento**   
 	Sensores de movimento estão presentes em uma gama de aplicações e softwares que funcionam através do movimento direcionado ao smartphone, como rotações, inclinações, mudanças de velocidade, entre outros. Simplificando, eles medem grandezas físicas nos três eixos (x, y e z).
 	  
-**Sensores de ambientais**   
+2.12.2 **Sensores de ambientais**   
 	Está relacionado os fenômenos naturais. Para entender melhor esses sensores, é bom pensarmos, por exemplo, no termômetro, que pode tanto calcular a temperatura ambiente, como também a temperatura presente no hardware. Isso só é possível graças aos sensores que têm a função de medir parâmetros ambientais, ou seja, relacionados a natureza.	
 	
- **Sensores de posição**   
-	Orientação é um sensor que compõe essa categoria, sendo utilizado em aplicativos que se baseiam na posição física do usuário. Exemplificando, podemos citar a aplicação Google Maps, que utiliza os sensores de posição para saber a sua localização atual da pessoa, para assim, lhe dar um norte para onde ela deseja ir. 
+2.12.3 **Sensores de posição**   
+	Orientação é um sensor que compõe essa categoria, sendo utilizado em aplicativos que se baseiam na posição física do usuário. Exemplificando, podemos citar a aplicação Google Maps, que utiliza os sensores de posição para saber a sua localização atual da pessoa, para assim, lhe dar um norte para onde ela deseja ir.   
 
+ <br>
+ <br>
+
+## Principais Permissões  
+
+Antes de tudo, devemos explicar o que é um permissão, que se baseia em elementos que garantem a segurança da privacidade do usuário, protegendo dados restritos, como o estado do sistema e os dados de contato dos usuários, e também ações restritas, como a conexão a um dispositivo pareado e a gravação de áudio. Algumas permissões são permitidas automaticamente quando a aplicação é instalada, e outras obrigam que o app solicite ao usuário uma permissão para ser executada, que são chamadas de permissões de execução. Mas na realidade, existem uma variedade grande de permissões, contendo vários tipos de categorias, como: 
+
+3.1.1 **Permissões da instalação**   
+Esse tipo de permissão permite que o app tenha acesso limitado a dados restritos, e também podem permitir que o aplicativo execute ações restritas que afete o sistema de outros aplicativos.
+
+<br>
+
+3.1.2 **Permissões normais**   
+São possivelmente o tipo mais comum de permissões utilizadas em aplicações, pois autorizam o acesso a dados/ações que vão além da sandbox da aplicação, mostrando pouco risco à privacidade do usuário.
+
+<br>
+
+3.1.3 **Permissões de assinatura**   
+Essa permissão permite uma assinatura a um aplicativo quando ele é assinado pelo mesmo certificado do aplicativo ou do sistema operacional que definiu a devida permissão. São geralmente utilizados em aplicativos que implementam serviços privilegiados, como preenchimento automatico ou VPN.
+
+<br>
+
+3.1.4 **Permissões de execução**  
+Também sendo conhecidas como "permissões perigosas", permitem que o aplicativo tenha acesso extra a dados restritos, e também podem autorizar que ele efetue ações restritas que afetam mais significamente o sistema de outro aplicativo, por essa razão, é necessário solocitar as permissões de execução antes de acessar os dados/ações restritos.
+
+<br>
+
+3.1.5 **Permissões especiais**
+São baseadas em operações de aplicativos específicos, sendo apenas possivel de utilizar, quando for definido pela própria plataforma e os OEMs, e geralmente são elas que definem permissões especiais pelo fato de proteger o acesso à ações significativas, um exemplo clássico que podemos citar é sobrepor outros aplicativos.
+
+<br>
+
+3.2 **Principais Permissões**  
+
+3.2.1 **Internet**   
+A permissão "android.permission.INTERNET" permite que a aplicação tenha acesso à rede de internet.
+<br>
+
+3.2.2 **Acesss_network_state**   
+A permissão "android.permission.ACCESS_NETWORK_STATE" permite que a aplicação tenha acesso a informação sobre as redes, como conectividade.
+<br>
+
+3.2.3 **Câmera**   
+A permissão "android.permission.CAMERA" permite que o aplicativo tenha acesso à câmera do dispositivo, seja para tirar fotos, ou gravar vídeos.
+<br>
+
+3.2.4 **Read_external_storage e Write_external_storage**   
+As permissões "android.permission.READ_EXTERNAL_STORAGE" e "android.permission.WRITE_EXTERNAL_STORAGE" basicamente permitem que o app tenha acesso a ler e escrever no armazenamento externo, como um cartão SD por exemplo.
+<br>
+
+3.2.5 **Acess_fine_location e Acess_coarse_location**   
+As permissões "android.permission.ACCESS_FINE_LOCATION" e "android.permission.ACCESS_COARSE_LOCATION" se baseiam em o aplicativo acessar informações sobre a localização do dispositivo, seja exata ou aproximada.
+<br>
+ 
+3.2.6 **Record_audio**   
+A permissão "android.permission.RECORD_AUDIO" basicamnte permite que o aplicativo tenha acesso ao microfone do dispositivo.
+<br>
+
+3.2.7 **Bluetooth**   
+A permissão "android.permission.BLUETOOTH" permite que a aplicação tenha acesso ao bluetooth do dispositivo.
+<br>
+
+3.2.8 **Read_contacts e Write_contacts**   
+As permissões "android.permission.READ_CONTACTS" e
+"android.permission.WRITE_CONTACTS" permite que o app leia e digite/escreva nos contatos do dispositivo.
+<br>
+
+3.2.9 **Send_sms e Receive_sms**   
+As permissões "android.permission.SEND_SMS" e
+"android.permission.RECEIVE_SMS" permitem que a aplicação possa enviar e receber mensagens de SMS em seu dispositivo.
+<br>
+
+ ## Referências Bibliográficas   
+
+https://www.eletrogate.com/sensores-e-modulos#:~:text=Um%20sensor%20%C3%A9%20um%20dispositivo,de%20medi%C3%A7%C3%A3o%20e%2Fou%20monitoramento.  
+
+https://www.devmedia.com.br/utilizando-o-framework-de-sensores-no-android/32362  
+
+https://developer.android.com/guide/topics/sensors/sensors_overview?hl=pt-br  
+
+https://developer.android.com/reference/android/content/Intent#ACTION_CHOOSER  
+
+https://developer.android.com/guide/components/intents-common?hl=pt-br  
+
+https://developer.android.com/guide/topics/manifest/action-element?hl=pt-br  
+
+https://developer.android.com/guide/topics/permissions/overview?hl=pt-br   
+
+https://www.techtudo.com.br/listas/2021/12/5-permissoes-de-aplicativos-que-voce-deve-pensar-bem-antes-de-aceitar.ghtml   
 
 
 
