@@ -1,2 +1,6 @@
-# Trabalho_PAMI
-Trabalho feito por Matheus Kevin e Pedro Pequini de 2DS, em função da matéria de PAMI, sobre Permissões e Sensores
+# Pesquisa Permissões e Sensores - PAM
+### Pedro Santos Pequini e Matheus Kevin 2°DS
+
+
+### Principais Permissões - Actions para uso em Intents Implícitas - Sensores Dsiponíveis
+
